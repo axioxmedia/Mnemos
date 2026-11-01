@@ -1,0 +1,12 @@
+{
+  "recall_at_5_min": 0.70,
+  "false_memory_rate_max": 0.34,
+  "inject_ratio_max": 1.15,
+  "theta": {
+    "salience_decay": 0.97,
+    "mmr_lambda": 0.7,
+    "identity_boost": 0.92,
+    "question_demote": 0.15
+  },
+  "notes": "发版门禁阈值；CI 与 /api/eval/run 读取"
+}
