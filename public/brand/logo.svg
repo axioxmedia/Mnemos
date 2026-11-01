@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="Mnemos">
+  <!-- Monochrome mark: neural triad + M + infinity. Uses currentColor for light/dark. -->
+  <g fill="none" stroke="currentColor" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+    <!-- top neural triad (hollow nodes) -->
+    <circle cx="64" cy="14" r="5" fill="none"/>
+    <circle cx="42" cy="34" r="5" fill="none"/>
+    <circle cx="86" cy="34" r="5" fill="none"/>
+    <path d="M64 19 L64 26 M64 26 L47 31 M64 26 L81 31"/>
+    <!-- M silhouette -->
+    <path d="M24 96 L24 42 L64 78 L104 42 L104 96"/>
+    <!-- infinity woven through lower M -->
+    <path d="M38 102 C38 88 52 86 64 96 C76 86 90 88 90 102 C90 116 76 118 64 108 C52 118 38 116 38 102 Z" stroke-width="6.5"/>
+  </g>
+</svg>
