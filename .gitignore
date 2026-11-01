@@ -1,0 +1,79 @@
+# Dependencies & build
+node_modules/
+dist/
+dist-ssr/
+*.local
+.venv/
+**/__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+sidecar/.venv/
+packaging/.venv/
+packaging/build/
+packaging/dist/
+src-tauri/target/
+src-tauri/binaries/
+.tools/
+
+# Models & weights (never commit)
+models/
+**/models/breeze-tts-*/
+vendor/breeze-tts/
+ollama/
+tts-venv/
+**/tts_cache/
+*.gguf
+*.safetensors
+*.onnx
+*.bin
+!**/package-lock.json
+
+# User data & secrets
+data/
+.mnemos/
+.env
+.env.*
+!.env.example
+*.db
+*.db-journal
+*.sqlite
+*.sqlite3
+
+# Installers & release binaries (upload via GitHub Releases)
+release/
+*.exe
+!scripts/**/*.exe
+Mnemos_*_x64-setup.exe
+archive/
+
+# Logs / temp / local scratch
+*.log
+*.pid
+*.tgz
+*.bak
+*.bak_*
+_chk_*
+_bump*
+_do_*
+_fix_*
+_prep_*
+_patch_*
+_tmp_*
+_sync_*
+_breeze_*
+_feat_*
+_rev2_*
+6.0
+
+# OS / IDE
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+
+# Optional local avatar sample (place yourself; see public/avatar/models/README.md)
+**/*.vrm
+**/*.vrma.bak
