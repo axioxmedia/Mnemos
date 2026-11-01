@@ -1,0 +1,273 @@
+{
+  "ok": true,
+  "days": 730,
+  "seed": 42,
+  "n_questions": 10,
+  "recall_at_5": 1.0,
+  "recall_target": 0.7,
+  "recall_pass": true,
+  "inject_p50_day30": 547,
+  "inject_p50_day90": 534,
+  "inject_p50_ratio_90_over_30": 0.9763,
+  "inject_p50_day365": 523,
+  "inject_p50_day730": 522,
+  "inject_p50_ratio_730_over_30": 0.9534,
+  "false_memory_rate": 0.0,
+  "false_memory_details": [
+    {
+      "q": "我养过一只叫咪咪的狗吗？",
+      "false_hit": false,
+      "top": [
+        "补充：我的宠物方面，一只叫豆豆的橘猫。",
+        "补充：我的宠物方面，一只叫豆豆的橘猫。"
+      ]
+    },
+    {
+      "q": "我是不是在北京上班？",
+      "false_hit": false,
+      "top": [
+        "对了，我想让你记住：忌口是不吃香菜。",
+        "对了，我想让你记住：工作是在杭州做嵌入式固件。"
+      ]
+    },
+    {
+      "q": "我喜欢吃香菜吗？",
+      "false_hit": false,
+      "top": [
+        "补充：我的忌口方面，不吃香菜。",
+        "补充：我的忌口方面，不吃香菜。"
+      ]
+    }
+  ],
+  "false_memory_target": 0.34,
+  "false_memory_pass": true,
+  "ratio_target": 1.15,
+  "ratio_pass": true,
+  "total_inject_budget": 9500,
+  "slot_budgets": {
+    "S1_persona": 800,
+    "S2_core_profile": 1200,
+    "S3_rolling_summary": 1500,
+    "S4_recent_turns": 3000,
+    "S5_retrieved": 2000,
+    "S6_plugins": 800,
+    "S7_output_hint": 200
+  },
+  "budget_ok": true,
+  "encryption": {
+    "enabled": false,
+    "provider": "env",
+    "backend": "sqlite3",
+    "error": "No module named 'sqlcipher3'",
+    "platform": "linux"
+  },
+  "schema": {
+    "version": 3,
+    "fts_tokenize": "trigram",
+    "vec_backend": "episode_vecs",
+    "encryption": {
+      "enabled": false,
+      "provider": "env",
+      "backend": "sqlite3",
+      "error": "No module named 'sqlcipher3'",
+      "platform": "linux"
+    }
+  },
+  "episode_count": 2025,
+  "fact_count": 10,
+  "details": [
+    {
+      "q": "我的用户本名是什么？",
+      "gold": "张晓禾",
+      "hit": true,
+      "top": [
+        {
+          "id": "27570ce0-f48e-49d7-a3ba-cd87af771af5",
+          "summary": "补充：我的用户本名方面，张晓禾。"
+        },
+        {
+          "id": "c579b5ed-723b-4c55-be96-8ecfa9c2cd9c",
+          "summary": "补充：我的用户本名方面，张晓禾。"
+        },
+        {
+          "id": "d7cf13f0-77c1-4651-bf12-041d58454a02",
+          "summary": "补充：我的用户本名方面，张晓禾。"
+        }
+      ]
+    },
+    {
+      "q": "我的宠物是什么？",
+      "gold": "一只叫豆豆的橘猫",
+      "hit": true,
+      "top": [
+        {
+          "id": "f7a292e3-a37c-4ff4-9545-fd5b7c108951",
+          "summary": "补充：我的宠物方面，一只叫豆豆的橘猫。"
+        },
+        {
+          "id": "a7e6e1d8-0372-4d44-b0ac-bca4b962c609",
+          "summary": "补充：我的宠物方面，一只叫豆豆的橘猫。"
+        },
+        {
+          "id": "a7a85b48-8671-412f-b961-47b6449057f7",
+          "summary": "补充：我的宠物方面，一只叫豆豆的橘猫。"
+        }
+      ]
+    },
+    {
+      "q": "我的工作是什么？",
+      "gold": "在杭州做嵌入式固件",
+      "hit": true,
+      "top": [
+        {
+          "id": "8efc2f47-044f-42b9-9593-2b226db9ccdd",
+          "summary": "补充：我的工作方面，在杭州做嵌入式固件。"
+        },
+        {
+          "id": "6729384e-952d-4430-929c-9ee883d8aa45",
+          "summary": "补充：我的工作方面，在杭州做嵌入式固件。"
+        },
+        {
+          "id": "f5bd1418-270f-4ed0-b460-c983cf3df36d",
+          "summary": "补充：我的工作方面，在杭州做嵌入式固件。"
+        }
+      ]
+    },
+    {
+      "q": "我的忌口是什么？",
+      "gold": "不吃香菜",
+      "hit": true,
+      "top": [
+        {
+          "id": "42b74a7e-d609-4fa4-803b-42f1decfa3e6",
+          "summary": "补充：我的忌口方面，不吃香菜。"
+        },
+        {
+          "id": "d83ce029-a6e4-43d5-9408-4260e2e219c3",
+          "summary": "补充：我的忌口方面，不吃香菜。"
+        },
+        {
+          "id": "cfd78c08-7292-4c00-a20f-80a6d7a5166f",
+          "summary": "补充：我的忌口方面，不吃香菜。"
+        }
+      ]
+    },
+    {
+      "q": "我的爱好是什么？",
+      "gold": "周末徒步与胶片摄影",
+      "hit": true,
+      "top": [
+        {
+          "id": "fact",
+          "summary": ""
+        },
+        {
+          "id": "27ce4f36-6d76-4b7c-9e17-1d0696f1bf58",
+          "summary": "嗯嗯，好的。"
+        },
+        {
+          "id": "4f7155e7-5060-4c67-a692-2182f77cbba9",
+          "summary": "嗯嗯，好的。"
+        }
+      ]
+    },
+    {
+      "q": "我的住址是什么？",
+      "gold": "住在余杭",
+      "hit": true,
+      "top": [
+        {
+          "id": "660d1e5b-d567-4870-b7cb-47ce5829fd15",
+          "summary": "补充：我的住址方面，住在余杭。"
+        },
+        {
+          "id": "d6d789ff-b5a1-44f0-a32a-b8c9b80e1d9f",
+          "summary": "补充：我的住址方面，住在余杭。"
+        },
+        {
+          "id": "14bcea84-a30a-4b55-8d45-9ab025d14f06",
+          "summary": "补充：我的住址方面，住在余杭。"
+        }
+      ]
+    },
+    {
+      "q": "我的家人是什么？",
+      "gold": "妹妹在上海读研",
+      "hit": true,
+      "top": [
+        {
+          "id": "be3c3777-9076-4d50-a1bf-c8c62d080562",
+          "summary": "补充：我的家人方面，妹妹在上海读研。"
+        },
+        {
+          "id": "da7c756a-254f-40d6-aa53-da18dff17f3f",
+          "summary": "补充：我的家人方面，妹妹在上海读研。"
+        },
+        {
+          "id": "2032a74b-9d74-4319-a27e-6296c2969d6a",
+          "summary": "补充：我的家人方面，妹妹在上海读研。"
+        }
+      ]
+    },
+    {
+      "q": "我的项目是什么？",
+      "gold": "业余维护开源键盘固件",
+      "hit": true,
+      "top": [
+        {
+          "id": "c4c60700-311a-4a06-92e9-d78ce4a17f65",
+          "summary": "补充：我的项目方面，业余维护开源键盘固件。"
+        },
+        {
+          "id": "16894bd8-22bc-4582-a621-5fb507a1d227",
+          "summary": "补充：我的项目方面，业余维护开源键盘固件。"
+        },
+        {
+          "id": "ca3459ca-476b-4dda-ab43-bf91e4912623",
+          "summary": "补充：我的项目方面，业余维护开源键盘固件。"
+        }
+      ]
+    },
+    {
+      "q": "我的习惯是什么？",
+      "gold": "每天早上喝美式",
+      "hit": true,
+      "top": [
+        {
+          "id": "66b3dfda-f0dd-4389-bb6a-be4cc87cb58c",
+          "summary": "补充：我的习惯方面，每天早上喝美式。"
+        },
+        {
+          "id": "061eaedb-4014-4269-907e-affbb0a564a9",
+          "summary": "补充：我的习惯方面，每天早上喝美式。"
+        },
+        {
+          "id": "a669c8e8-f2d2-4b4f-9526-09246cc06ce8",
+          "summary": "补充：我的习惯方面，每天早上喝美式。"
+        }
+      ]
+    },
+    {
+      "q": "我的纪念日是什么？",
+      "gold": "和伴侣纪念日是 5 月 18 日",
+      "hit": true,
+      "top": [
+        {
+          "id": "c9187b73-71a9-4aac-b275-6bcbf21b5b66",
+          "summary": "补充：我的纪念日方面，和伴侣纪念日是 5 月 18 日。"
+        },
+        {
+          "id": "bd0ff9ca-bcc5-4a0e-817c-e2c059a817aa",
+          "summary": "补充：我的纪念日方面，和伴侣纪念日是 5 月 18 日。"
+        },
+        {
+          "id": "626e0fe8-7452-4c47-99c5-e6a31ad4a997",
+          "summary": "补充：我的纪念日方面，和伴侣纪念日是 5 月 18 日。"
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "MVP 评测目标达成。"
+  ]
+}
