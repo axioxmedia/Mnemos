@@ -1,0 +1,12 @@
+JapaneseRoom — Poly Pizza
+=========================
+Author: Aimi Sekiguchi
+Source: https://poly.pizza/m/7NVrPY2GYN5
+License: Creative Commons Attribution (CC BY)
+Format: glTF Binary (.glb), ~1.2 MB
+
+Required attribution: JapaneseRoom by Aimi Sekiguchi (Poly Pizza / CC BY).
+
+Note: Low-poly Japanese interior with furniture. Closest redistributable
+"anime-adjacent" furnished room found under a clear free license; not a
+commercial anime asset pack.
