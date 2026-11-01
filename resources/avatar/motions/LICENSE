@@ -1,0 +1,24 @@
+ACCAD Open Motion Project — Female1 idle-derived VRMA
+=====================================================
+
+Source BVH:
+  ACCAD / The Ohio State University — Open Motion Project
+  https://accad.osu.edu/research/motion-lab/mocap-system-and-data
+  Archive: Female1_bvh.zip
+  License: Creative Commons Attribution 3.0 Unported (CC BY 3.0)
+  https://creativecommons.org/licenses/by/3.0/
+
+Converted to VRMA with:
+  vrm-c/bvh2vrma (MIT) — scale 0.01
+  https://github.com/vrm-c/bvh2vrma
+
+Bundled files (renamed for Mnemos idle playlist):
+  idle.vrma   ← Female1_A01_Stand.bvh
+  idle_2.vrma ← Female1_A02_Sway.bvh
+  idle_3.vrma ← Female1_A02_SwayT2.bvh
+  idle_4.vrma ← Female1_D2_Wait.bvh
+  idle_5.vrma ← Female1_A04_Look.bvh
+  idle_6.vrma ← Female1_A03_Swing.bvh
+
+Required attribution:
+  Motion capture data © ACCAD / The Ohio State University (CC BY 3.0).
